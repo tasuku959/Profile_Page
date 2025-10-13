@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>仲宗根 將 | ポートフォリオ</title>
+<style>
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+  }
+  header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  nav button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    margin: 0 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  nav button.active {
+    background-color: #2c3e50;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  section {
+    display: none;
+  }
+  section.active {
+    display: block;
+  }
+  h2 {
+    border-left: 6px solid #3498db;
+    padding-left: 0.6rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li::before {
+    content: "• ";
+    color: #3498db;
+  }
+  a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>仲宗根 將（なかそね たすく）</h1>
+  <p>システムエンジニアを目指すフリーター</p>
+</header>
+
+<nav>
+  <button id="profileBtn" class="active" onclick="showSection('profile')">プロフィール</button>
+  <button id="portfolioBtn" onclick="showSection('portfolio')">制作物</button>
+</nav>
+
+<main>
+  <!-- プロフィールページ -->
+  <section id="profile" class="active">
+    <h2>👤 プロフィール</h2>
+    <ul>
+      <li>年齢：31歳</li>
+      <li>経歴：高校数学教諭（2年） → 放課後等デイサービス児童指導員（2年） → 沖縄聴覚障害者情報センター事務職（1年） → 現在はフリーター（SEを目指して学習中）</li>
+      <li>学習姿勢：「独学でHTML/CSS・JavaScript・SQLを学び、Webアプリの制作に挑戦中です。」</li>
+    </ul>
+
+    <h2>💻 ITスキル一覧</h2>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+      <li>SQL</li>
+      <li>Git / GitHub</li>
+      <li>VSCode</li>
+      <li>XAMPP</li>
+    </ul>
+
+    <h2>🛠 ツール・開発環境</h2>
+    <ul>
+      <li>Visual Studio Code：コーディング・デバッグに使用</li>
+      <li>Git / GitHub：バージョン管理・公開経験あり</li>
+      <li>XAMPP：ローカル開発環境として使用</li>
+    </ul>
+  </section>
+
+  <!-- 制作物ページ -->
+  <section id="portfolio">
+    <h2>🧩 制作実績</h2>
+
+    <h3>手話勉強会ホームページ</h3>
+    <ul>
+      <li>目的：手話勉強会の情報共有と管理</li>
+      <li>使用技術：HTML / CSS / JavaScript</li>
+      <li>工夫した点：
+        <ul>
+          <li>授業日や資料回覧を簡単に管理できるUI設計</li>
+          <li>レスポンシブ対応でスマホからも見やすい</li>
+        </ul>
+      </li>
+      <li>リンク：<a href="https://tasuku959.github.io/shuwakai_trial_version_external_link/1_top/" target="_blank">ホームページを見る</a></li>
+    </ul>
+
+    <h3>クイズ</h3>
+    <ul>
+      <li>目的：手話学習者が指文字と手話単語を楽しく覚えるため</li>
+      <li>使用技術：JavaScript</li>
+      <li>工夫した点：
+        <ul>
+          <li>問題ごとにランダムで画像を表示</li>
+          <li>正解・不正解を判定する簡易UI</li>
+          <li>指文字クイズにおいて、一部画像が表示されない問題あり（原因確認中）</li>
+        </ul>
+      </li>
+      <li>リンク：<a href="https://tasuku959.github.io/shuwakai_trial_version_localhost/index.html" target="_blank">クイズを見る</a></li>
+    </ul>
+
+    <h3>オセロアプリ</h3>
+    <ul>
+      <li>目的：Javaの配列・二重ループ・メソッドの理解</li>
+      <li>使用技術：Java</li>
+      <li>工夫した点：
+        <ul>
+          <li>盤面を二次元配列で管理</li>
+          <li>printBoardメソッドで整形表示</li>
+          <li>今後、石を置く処理やゲームロジック追加可能</li>
+        </ul>
+      </li>
+      <li>リンク：<a href="https://github.com/username/OthelloBoard" target="_blank">未完成</a></li>
+    </ul>
+
+    <p><strong>課題・今後の目標：</strong><br>
+      GitHubへのアップロード容量制限のため、「手話勉強会ホームページ」と「クイズ」を分割してアップロードしました。  
+      画像をGoogleドライブにアップロードして読み込む方法も試しましたが、正常に表示されず原因を確認中です。  
+      また、指文字クイズの問題として表示される指文字画像の中に、一部表示されないものがあり、その原因も確認中です。  
+      これらが解決でき次第、「手話勉強会ホームページ」に「クイズ」を統合し、最終的にはWebアプリ化（スマホ対応）を目標としています。
+      オセロアプリに関しては、石を置く処理やゲームロジックの追加を進め、最終的にはアプリ化の完成を目指します。
+    </p>
+  </section>
+</main>
+
+<footer>
+  © 2025 仲宗根 將 All Rights Reserved.
+</footer>
+
+<script>
+function showSection(sectionId) {
+  document.querySelectorAll('main section').forEach(sec => sec.classList.remove('active'));
+  document.getElementById(sectionId).classList.add('active');
+
+  document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
+  if(sectionId === 'profile') document.getElementById('profileBtn').classList.add('active');
+  else document.getElementById('portfolioBtn').classList.add('active');
+}
+</script>
+
+</body>
+</html>
